@@ -14,9 +14,9 @@ header = {
 params = {
     "query": input("What did you do today? "),
     "gender": "male",
-    "weight_kg": 57.0,
-    "height_cm": 167.64,
-    "age": 28,
+    "weight_kg": your weight,
+    "height_cm": your height,
+    "age": your age,
 }
 response = requests.post(url=ENDPOINT, json=params, headers=header)
 response.raise_for_status()
